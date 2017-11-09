@@ -18,54 +18,41 @@
         display: inline-block;
         margin: 1em;
         font-size: 14px;
-        border-radius: 2px;
         background-color: #fafafa;
         width: 344px;
-        height: 304px; 
         box-shadow: 0 7px 35px 0 rgba(0, 0, 0, 0.3); 
-     
     }
 
     section:hover {
       box-shadow: 0 17px 55px 0 rgba(0, 0, 0, 0.3);
     }
     
+    header {
+      background-image: url(https://placeimg.com/344/204/nature);
+    }
+    
     h2 {
         font-size: 20px;
         color: white;
-        padding: 140px 16px 0;
+        padding: 140px 16px 16px;
         margin: 0;
         text-transform: uppercase;
     }
 
-    p {
-        
+    p {     
         padding: 16px;
         margin: 0;
         line-height: 1.6;   
     }
 
-    div {
-        position: relative;
-        background-size: cover;
-        background-position: center bottom;
-        width: 100%;
-        height: 100%;
-        max-height: 176px;
-    }
-
-    span {
-
+    nav {
         border-top: 1px solid #E0E0E0;
-        height: 52px;  
-        display: block;
     }
 
     a {
        text-decoration: none;
        display: inline-block;
-       line-height: 52px;
-       padding: 0 16px;
+       padding: 16px;
        color: #FF1744;
        letter-spacing: 1px;
     }  
@@ -79,27 +66,27 @@
 
 
 <section>
-  <div class="image" style="background-image: url(https://placeimg.com/640/480/nature)">
+  <header>
     <h2>Kangaroo Valley Safari</h2>
-  </div>
+  </header>
   
   <p>Located two hours south of Sydney in the Southern Highland of New South Wales...</p>
-  <span class="action-bar">
+  <nav>
     <a href="#">SHARE</a>
     <a href="#">LEARN MORE</a>
-  </span>
+  </nav>
 </section>
 
 <section>
-  <div class="image" style="background-image: url(https://placeimg.com/640/481/nature)">
+  <header>
     <h2>Uluru</h2>
-  </div>
+  </header>
   
   <p>Largest monolith (geological feature consisting of a single massive stone or rock) in the world.</p>
-  <span class="action-bar">
+  <nav>
     <a href="#">SHARE</a>
     <a href="#">LEARN MORE</a>
-  </span>
+  </nav>
 </section>
 
 	</body>
