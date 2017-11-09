@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+
+    <title>jQuery example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+		<!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/style.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <style>
+  
+      nav li {
+        margin-top: 20px;
+        position: relative;
+        list-style: none;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .menu { 
+        display: none;
+        list-style: none;
+        position: absolute;
+        border: 1px solid #eee;
+        border-top: none;
+        padding: 0 10px 10px;
+        margin-left: 10px;
+      }
+      
+      .menu-toggle {
+        padding: 20px;
+      }
+    </style>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+</head>
+<body>
+
+<nav>
+  <ul>
+  
+  <li><a class="menu-toggle">Top level menu</a>
+      <ul class="menu">
+        <li>Menu item</li>
+        <li>Menu item</li>
+        <li>Menu item</li>
+      </ul>
+  </li>
+  
+  <li><a class="menu-toggle">Top level menu 1</a>
+    <ul class="menu">
+      <li>Menu item</li>
+      <li>Menu item</li>
+      <li>Menu item</li>
+    </ul>
+   </li>
+</nav>
+
+<script> 
+$(".menu-toggle").on("click", function(){
+	$(this).next(".menu").slideToggle();
+});
+</script>
+
+
+</body>
+
+</html>
+
+
+
